@@ -7,5 +7,5 @@
     }
     include "Includes/HTML/header.inc.html";
     include "Includes/HTML/navbarAdmin.inc.html";   
-    include "Includes/ProductList.inc.php";
+    include "Includes/CategoryList.inc.php";
     include "Includes/HTML/footer.inc.html";
