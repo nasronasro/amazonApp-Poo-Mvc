@@ -13,11 +13,12 @@ class ProductView extends ProductCntr{
                 <td>{$line["Category"]}</td>
                 <td>{$line["Stock"]}</td>
                 <td>
-                    <a href='' class='btn btn-primary' id='modifyProduct{$line["idProduct"]}'>modify</a>
-                    <a href='' class='btn btn-primary' id='deleteProduct{$line["idProduct"]}'>del</a>
+                    <button class='btn btn-primary modifyProduct' id='modifyProduct{$line["idProduct"]}'>modify</button>
+                    <button class='btn btn-primary deleteProduct' id='deleteProduct{$line["idProduct"]}'>del</button>
                 </td>
             </tr>";
         }
+        echo "<div class='display'></div>";
     }
     public function DisplayCategories(){
         $data = $this->GetCategories();
@@ -27,10 +28,11 @@ class ProductView extends ProductCntr{
                 <th scope='row'>{$line["idCategory"]}</th>
                 <td>{$line["label"]}</td>
                 <td>
-                    <a href='' class='btn btn-primary' id='modifyCategory{$line["idCategory"]}'>modify</a>
-                    <a href='' class='btn btn-primary' id='deleteCategory{$line["idCategory"]}'>del</a>
+                    <button class='btn btn-primary modifyCategory' id='modifyCategory{$line["idCategory"]}'>modify</button>
+                    <button class='btn btn-primary deleteCategory' id='deleteCategory{$line["idCategory"]}'>del</button>
                 </td>
             </tr>";
         }
+        echo "<div class='display'></div>";
     }
 }
